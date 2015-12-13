@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Tao365
-//
-//  Created by trungy on 12/12/15.
-//  Copyright © 2015 trungy. All rights reserved.
-//
-
 import UIKit
 import CoreData
 
@@ -13,10 +5,30 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let userDefaults = NSUserDefaults.standardUserDefaults()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+//        var dayNumber:Int?
+//
+//        if let startDate:NSDate = userDefaults.objectForKey("startDate") as? NSDate {
+//            let calendar = NSCalendar.currentCalendar()
+//            dayNumber = calendar.components(.Day, fromDate: startDate, toDate: NSDate(), options: []).day
+//            print(">>>>>>>>>> dayNumber = \(dayNumber)")
+//        } else {
+//            userDefaults.setObject(NSDate(), forKey: "startDate")
+//        }
+//        
+//        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+//        if dayNumber! == 1 {
+//            self.window?.rootViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("introductionView")
+//        } else {
+//            let rootView = mainStoryBoard.instantiateViewControllerWithIdentifier("dayListViewNav") as! UINavigationController
+//            let dayListView = rootView.topViewController as! DayListTableViewController
+//            dayListView.dayNumber = dayNumber
+//            self.window?.rootViewController = rootView
+//        }
+        
         return true
     }
 

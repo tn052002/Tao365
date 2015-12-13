@@ -1,0 +1,19 @@
+PODS:
+  - UICollectionView-ARDynamicHeightLayoutCell (1.0)
+
+DEPENDENCIES:
+  - UICollectionView-ARDynamicHeightLayoutCell (from `https://github.com/AugustRush/UICollectionView-ARDynamicHeightLayoutCell.git`)
+
+EXTERNAL SOURCES:
+  UICollectionView-ARDynamicHeightLayoutCell:
+    :git: https://github.com/AugustRush/UICollectionView-ARDynamicHeightLayoutCell.git
+
+CHECKOUT OPTIONS:
+  UICollectionView-ARDynamicHeightLayoutCell:
+    :commit: 6b38647d2088fc58e3dc912a9e81e71b9aeb9803
+    :git: https://github.com/AugustRush/UICollectionView-ARDynamicHeightLayoutCell.git
+
+SPEC CHECKSUMS:
+  UICollectionView-ARDynamicHeightLayoutCell: 560154abd491f89ad6381fa76bfb091cee2b3f37
+
+COCOAPODS: 0.38.2
