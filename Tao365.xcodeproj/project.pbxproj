@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B715F7971C1D2C8600565BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7961C1D2C8600565BEA /* AppDelegate.swift */; };
+		B715F7991C1D2C8600565BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7981C1D2C8600565BEA /* ViewController.swift */; };
+		B715F79C1C1D2C8600565BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B715F79A1C1D2C8600565BEA /* Main.storyboard */; };
+		B715F79F1C1D2C8600565BEA /* Tao365.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B715F79D1C1D2C8600565BEA /* Tao365.xcdatamodeld */; };
+		B715F7A11C1D2C8600565BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B715F7A01C1D2C8600565BEA /* Assets.xcassets */; };
+		B715F7A41C1D2C8600565BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B715F7A21C1D2C8600565BEA /* LaunchScreen.storyboard */; };
+		B715F7AF1C1D2C8600565BEA /* Tao365Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7AE1C1D2C8600565BEA /* Tao365Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B715F7AB1C1D2C8600565BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B715F78B1C1D2C8600565BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B715F7921C1D2C8600565BEA;
+			remoteInfo = Tao365;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B715F7931C1D2C8600565BEA /* Tao365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tao365.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B715F7961C1D2C8600565BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B715F7981C1D2C8600565BEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B715F79B1C1D2C8600565BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B715F79E1C1D2C8600565BEA /* Tao365.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tao365.xcdatamodel; sourceTree = "<group>"; };
+		B715F7A01C1D2C8600565BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B715F7A31C1D2C8600565BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B715F7A51C1D2C8600565BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B715F7AA1C1D2C8600565BEA /* Tao365Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tao365Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B715F7AE1C1D2C8600565BEA /* Tao365Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tao365Tests.swift; sourceTree = "<group>"; };
+		B715F7B01C1D2C8600565BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B715F7901C1D2C8600565BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B715F7A71C1D2C8600565BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B715F78A1C1D2C8600565BEA = {
+			isa = PBXGroup;
+			children = (
+				B715F7951C1D2C8600565BEA /* Tao365 */,
+				B715F7AD1C1D2C8600565BEA /* Tao365Tests */,
+				B715F7941C1D2C8600565BEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B715F7941C1D2C8600565BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B715F7931C1D2C8600565BEA /* Tao365.app */,
+				B715F7AA1C1D2C8600565BEA /* Tao365Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B715F7951C1D2C8600565BEA /* Tao365 */ = {
+			isa = PBXGroup;
+			children = (
+				B715F7961C1D2C8600565BEA /* AppDelegate.swift */,
+				B715F7981C1D2C8600565BEA /* ViewController.swift */,
+				B715F79A1C1D2C8600565BEA /* Main.storyboard */,
+				B715F7A01C1D2C8600565BEA /* Assets.xcassets */,
+				B715F7A21C1D2C8600565BEA /* LaunchScreen.storyboard */,
+				B715F7A51C1D2C8600565BEA /* Info.plist */,
+				B715F79D1C1D2C8600565BEA /* Tao365.xcdatamodeld */,
+			);
+			path = Tao365;
+			sourceTree = "<group>";
+		};
+		B715F7AD1C1D2C8600565BEA /* Tao365Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B715F7AE1C1D2C8600565BEA /* Tao365Tests.swift */,
+				B715F7B01C1D2C8600565BEA /* Info.plist */,
+			);
+			path = Tao365Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B715F7921C1D2C8600565BEA /* Tao365 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B715F7B31C1D2C8600565BEA /* Build configuration list for PBXNativeTarget "Tao365" */;
+			buildPhases = (
+				B715F78F1C1D2C8600565BEA /* Sources */,
+				B715F7901C1D2C8600565BEA /* Frameworks */,
+				B715F7911C1D2C8600565BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tao365;
+			productName = Tao365;
+			productReference = B715F7931C1D2C8600565BEA /* Tao365.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B715F7A91C1D2C8600565BEA /* Tao365Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B715F7B61C1D2C8600565BEA /* Build configuration list for PBXNativeTarget "Tao365Tests" */;
+			buildPhases = (
+				B715F7A61C1D2C8600565BEA /* Sources */,
+				B715F7A71C1D2C8600565BEA /* Frameworks */,
+				B715F7A81C1D2C8600565BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B715F7AC1C1D2C8600565BEA /* PBXTargetDependency */,
+			);
+			name = Tao365Tests;
+			productName = Tao365Tests;
+			productReference = B715F7AA1C1D2C8600565BEA /* Tao365Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B715F78B1C1D2C8600565BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = trungy;
+				TargetAttributes = {
+					B715F7921C1D2C8600565BEA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					B715F7A91C1D2C8600565BEA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = B715F7921C1D2C8600565BEA;
+					};
+				};
+			};
+			buildConfigurationList = B715F78E1C1D2C8600565BEA /* Build configuration list for PBXProject "Tao365" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B715F78A1C1D2C8600565BEA;
+			productRefGroup = B715F7941C1D2C8600565BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B715F7921C1D2C8600565BEA /* Tao365 */,
+				B715F7A91C1D2C8600565BEA /* Tao365Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B715F7911C1D2C8600565BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B715F7A41C1D2C8600565BEA /* LaunchScreen.storyboard in Resources */,
+				B715F7A11C1D2C8600565BEA /* Assets.xcassets in Resources */,
+				B715F79C1C1D2C8600565BEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B715F7A81C1D2C8600565BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B715F78F1C1D2C8600565BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B715F7991C1D2C8600565BEA /* ViewController.swift in Sources */,
+				B715F7971C1D2C8600565BEA /* AppDelegate.swift in Sources */,
+				B715F79F1C1D2C8600565BEA /* Tao365.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B715F7A61C1D2C8600565BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B715F7AF1C1D2C8600565BEA /* Tao365Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B715F7AC1C1D2C8600565BEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B715F7921C1D2C8600565BEA /* Tao365 */;
+			targetProxy = B715F7AB1C1D2C8600565BEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B715F79A1C1D2C8600565BEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B715F79B1C1D2C8600565BEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B715F7A21C1D2C8600565BEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B715F7A31C1D2C8600565BEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B715F7B11C1D2C8600565BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B715F7B21C1D2C8600565BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B715F7B41C1D2C8600565BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tao365/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trung.Tao365;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B715F7B51C1D2C8600565BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tao365/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trung.Tao365;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B715F7B71C1D2C8600565BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tao365Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trung.Tao365Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tao365.app/Tao365";
+			};
+			name = Debug;
+		};
+		B715F7B81C1D2C8600565BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Tao365Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trung.Tao365Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tao365.app/Tao365";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B715F78E1C1D2C8600565BEA /* Build configuration list for PBXProject "Tao365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B715F7B11C1D2C8600565BEA /* Debug */,
+				B715F7B21C1D2C8600565BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B715F7B31C1D2C8600565BEA /* Build configuration list for PBXNativeTarget "Tao365" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B715F7B41C1D2C8600565BEA /* Debug */,
+				B715F7B51C1D2C8600565BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B715F7B61C1D2C8600565BEA /* Build configuration list for PBXNativeTarget "Tao365Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B715F7B71C1D2C8600565BEA /* Debug */,
+				B715F7B81C1D2C8600565BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B715F79D1C1D2C8600565BEA /* Tao365.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B715F79E1C1D2C8600565BEA /* Tao365.xcdatamodel */,
+			);
+			currentVersion = B715F79E1C1D2C8600565BEA /* Tao365.xcdatamodel */;
+			path = Tao365.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B715F78B1C1D2C8600565BEA /* Project object */;
+}
