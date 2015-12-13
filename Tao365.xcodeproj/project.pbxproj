@@ -16,6 +16,7 @@
 		B715F7AF1C1D2C8600565BEA /* Tao365Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7AE1C1D2C8600565BEA /* Tao365Tests.swift */; };
 		B715F7BA1C1D3B7300565BEA /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7B91C1D3B7300565BEA /* IntroductionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B715F7BC1C1D3CCC00565BEA /* DayListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7BB1C1D3CCC00565BEA /* DayListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B78EB56C1C1E261B00A2A292 /* ThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB56B1C1E261B00A2A292 /* ThoughtsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B715F7B91C1D3B7300565BEA /* IntroductionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		B715F7BB1C1D3CCC00565BEA /* DayListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayListTableViewController.swift; sourceTree = "<group>"; };
 		B76BC6C01C1D4A2500AF1385 /* tao365Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tao365Header.h; sourceTree = "<group>"; };
+		B78EB56B1C1E261B00A2A292 /* ThoughtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThoughtsViewController.swift; sourceTree = "<group>"; };
 		ECE6D4FF476656B01C2BA73A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 				B715F79D1C1D2C8600565BEA /* Tao365.xcdatamodeld */,
 				B715F7B91C1D3B7300565BEA /* IntroductionViewController.swift */,
 				B715F7BB1C1D3CCC00565BEA /* DayListTableViewController.swift */,
+				B78EB56B1C1E261B00A2A292 /* ThoughtsViewController.swift */,
 			);
 			path = Tao365;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78EB56C1C1E261B00A2A292 /* ThoughtsViewController.swift in Sources */,
 				B715F7BC1C1D3CCC00565BEA /* DayListTableViewController.swift in Sources */,
 				B715F7971C1D2C8600565BEA /* AppDelegate.swift in Sources */,
 				B715F7BA1C1D3B7300565BEA /* IntroductionViewController.swift in Sources */,
@@ -348,6 +352,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = tao365Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -386,6 +391,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = tao365Header.h;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

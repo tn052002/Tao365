@@ -6,8 +6,5 @@
 //  Copyright © 2015 trungy. All rights reserved.
 //
 
-#ifndef tao365Header_h
-#define tao365Header_h
+#import "UICollectionView-ARDynamicHeightLayoutCell/UICollectionView+ARDynamicCacheHeightLayoutCell.h"
 
-
-#endif /* tao365Header_h */
