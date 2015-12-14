@@ -15,7 +15,12 @@ class DayListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.barStyle = UIBarStyle.Black
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.title = "TAO 365"
+        
+        self.tabBarController!.tabBar.barStyle = UIBarStyle.Black
+        self.tabBarController!.tabBar.tintColor = UIColor.whiteColor()
         for day in days {
             var dayDetail = TaoDay()
             dayDetail.title = "Day \(day) title"

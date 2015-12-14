@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dailyThoughtCell" rowHeight="127" id="9bh-vy-Fp5" customClass="MultiLineTextInputTableViewCell" customModule="Tao365" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9bh-vy-Fp5" id="gUc-VF-w6a">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="textView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MJR-vK-R0Q">
+                        <rect key="frame" x="8" y="29" width="396" height="89.5"/>
+                        <color key="textColor" red="1" green="0.69286082169999996" blue="0.19154039940000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/15/2015 9:45 am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWq-M4-6uh">
+                        <rect key="frame" x="8" y="8" width="396" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="M8g-SJ-wiI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MJR-vK-R0Q" firstAttribute="top" secondItem="KWq-M4-6uh" secondAttribute="bottom" id="264-oH-QuZ"/>
+                    <constraint firstItem="KWq-M4-6uh" firstAttribute="top" secondItem="gUc-VF-w6a" secondAttribute="topMargin" id="MMf-fe-teY"/>
+                    <constraint firstItem="MJR-vK-R0Q" firstAttribute="bottom" secondItem="gUc-VF-w6a" secondAttribute="bottomMargin" id="Mpa-pw-CbC"/>
+                    <constraint firstItem="KWq-M4-6uh" firstAttribute="leading" secondItem="gUc-VF-w6a" secondAttribute="leadingMargin" id="OP2-fl-gud"/>
+                    <constraint firstItem="MJR-vK-R0Q" firstAttribute="trailing" secondItem="gUc-VF-w6a" secondAttribute="trailingMargin" id="RZl-Gb-0yc"/>
+                    <constraint firstItem="KWq-M4-6uh" firstAttribute="trailing" secondItem="gUc-VF-w6a" secondAttribute="trailingMargin" id="axD-Tl-wL7"/>
+                    <constraint firstItem="MJR-vK-R0Q" firstAttribute="leading" secondItem="gUc-VF-w6a" secondAttribute="leadingMargin" id="hvc-P8-lBH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textView" destination="MJR-vK-R0Q" id="0Zy-0I-Uyu"/>
+                <outlet property="titleLabel" destination="KWq-M4-6uh" id="8fc-9E-M0b"/>
+            </connections>
+            <point key="canvasLocation" x="179" y="211.5"/>
+        </tableViewCell>
+    </objects>
+</document>

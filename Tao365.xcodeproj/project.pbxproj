@@ -16,6 +16,9 @@
 		B715F7BA1C1D3B7300565BEA /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7B91C1D3B7300565BEA /* IntroductionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B715F7BC1C1D3CCC00565BEA /* DayListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B715F7BB1C1D3CCC00565BEA /* DayListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B78EB56E1C1E3E6B00A2A292 /* DayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB56D1C1E3E6B00A2A292 /* DayDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B78EB5701C1E703E00A2A292 /* DailyThoughtsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB56F1C1E703E00A2A292 /* DailyThoughtsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B78EB5721C1E764100A2A292 /* DailyThoughtCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78EB5711C1E764100A2A292 /* DailyThoughtCell.xib */; settings = {ASSET_TAGS = (); }; };
+		B78EB5741C1E773F00A2A292 /* MultiLineTextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78EB5731C1E773F00A2A292 /* MultiLineTextInputTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		B715F7BB1C1D3CCC00565BEA /* DayListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayListTableViewController.swift; sourceTree = "<group>"; };
 		B76BC6C01C1D4A2500AF1385 /* tao365Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tao365Header.h; sourceTree = "<group>"; };
 		B78EB56D1C1E3E6B00A2A292 /* DayDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDetailViewController.swift; sourceTree = "<group>"; };
+		B78EB56F1C1E703E00A2A292 /* DailyThoughtsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyThoughtsViewController.swift; sourceTree = "<group>"; };
+		B78EB5711C1E764100A2A292 /* DailyThoughtCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyThoughtCell.xib; sourceTree = "<group>"; };
+		B78EB5731C1E773F00A2A292 /* MultiLineTextInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineTextInputTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,7 @@
 		B715F7951C1D2C8600565BEA /* Tao365 */ = {
 			isa = PBXGroup;
 			children = (
+				B78EB5751C1E7D8C00A2A292 /* Cell */,
 				B715F7961C1D2C8600565BEA /* AppDelegate.swift */,
 				B715F79A1C1D2C8600565BEA /* Main.storyboard */,
 				B715F7A01C1D2C8600565BEA /* Assets.xcassets */,
@@ -95,6 +102,7 @@
 				B715F7B91C1D3B7300565BEA /* IntroductionViewController.swift */,
 				B715F7BB1C1D3CCC00565BEA /* DayListTableViewController.swift */,
 				B78EB56D1C1E3E6B00A2A292 /* DayDetailViewController.swift */,
+				B78EB56F1C1E703E00A2A292 /* DailyThoughtsViewController.swift */,
 			);
 			path = Tao365;
 			sourceTree = "<group>";
@@ -106,6 +114,15 @@
 				B715F7B01C1D2C8600565BEA /* Info.plist */,
 			);
 			path = Tao365Tests;
+			sourceTree = "<group>";
+		};
+		B78EB5751C1E7D8C00A2A292 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B78EB5711C1E764100A2A292 /* DailyThoughtCell.xib */,
+				B78EB5731C1E773F00A2A292 /* MultiLineTextInputTableViewCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		E1E9DE1C4B682E4E85B835CE /* Frameworks */ = {
@@ -198,6 +215,7 @@
 				B715F7A41C1D2C8600565BEA /* LaunchScreen.storyboard in Resources */,
 				B715F7A11C1D2C8600565BEA /* Assets.xcassets in Resources */,
 				B715F79C1C1D2C8600565BEA /* Main.storyboard in Resources */,
+				B78EB5721C1E764100A2A292 /* DailyThoughtCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78EB5701C1E703E00A2A292 /* DailyThoughtsViewController.swift in Sources */,
+				B78EB5741C1E773F00A2A292 /* MultiLineTextInputTableViewCell.swift in Sources */,
 				B715F7BC1C1D3CCC00565BEA /* DayListTableViewController.swift in Sources */,
 				B715F7971C1D2C8600565BEA /* AppDelegate.swift in Sources */,
 				B715F7BA1C1D3B7300565BEA /* IntroductionViewController.swift in Sources */,
