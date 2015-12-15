@@ -38,8 +38,10 @@ extension MultiLineTextInputTableViewCell: UITextViewDelegate {
     }
     
     func textViewDidEndEditing(textView: UITextView) {
-        if let thisIndexPath = tableView?.indexPathForCell(self) {
-            thoughtEntries[thisIndexPath.row].content = textView.text
+        if (tableView?.isKindOfClass(DailyThoughtsViewController) == true) {
+            if let thisIndexPath = tableView?.indexPathForCell(self) {
+                thoughtEntries[thisIndexPath.row].content = textView.text
+            }
         }
     }
 }

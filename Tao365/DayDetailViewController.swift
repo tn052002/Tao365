@@ -1,12 +1,58 @@
-//
-//  DayDetailViewController.swift
-//  Tao365
-//
-//  Created by trungy on 12/13/15.
-//  Copyright © 2015 trungy. All rights reserved.
-//
-
 import UIKit
+
+extension DayDetailViewController {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 3
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return theDay.title
+        } else if section == 1 {
+            return "Tao of today"
+        }
+        return "My Daily Thoughs"
+    }
+    
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return ""
+    }
+    
+    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 55
+    }
+    
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if (indexPath.section != 2) {
+            let cell = tableView.dequeueReusableCellWithIdentifier("dayDetailCell", forIndexPath: indexPath)
+            var contentString:String!
+            
+            if indexPath.section == 0 {
+                contentString = theDay.content
+            } else {
+                contentString = theDay.taoOfToday
+            }
+            
+            if let label = cell.viewWithTag(1) as? UILabel {
+                label.text = contentString
+            }
+            
+            return cell
+        }
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("dailyThoughtCell", forIndexPath: indexPath) as! MultiLineTextInputTableViewCell
+        cell.titleLabel?.text = "Tap to edit - Tap again when done"
+        cell.textString = "Tap to edit"
+        
+        return cell
+    }
+}
 
 class DayDetailViewController: UITableViewController {
     
@@ -18,8 +64,23 @@ class DayDetailViewController: UITableViewController {
         
         self.title = "Day \(dayNumber)"
         
+        self.tableView.registerNib(UINib(nibName: "DailyThoughtCell", bundle: nil), forCellReuseIdentifier: "dailyThoughtCell")
+        
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44*4
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let tap = UITapGestureRecognizer()
+//        tap.numberOfTapsRequired = 2
+        tap.addTarget(self, action: "endEditing")
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    func endEditing() {
+        print("tap.....")
+        self.tableView.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,49 +89,6 @@ class DayDetailViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 2
-    }
-    
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return theDay.title
-        }
-        
-        return "Tao of today"
-    }
-    
-    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return ""
-    }
-    
-    override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 55
-    }
-
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("dayDetailCell", forIndexPath: indexPath)
-        var contentString:String!
-
-        if indexPath.section == 0 {
-            contentString = theDay.content
-        } else {
-            contentString = theDay.taoOfToday
-        }
-        
-        if let label = cell.viewWithTag(1) as? UILabel {
-            label.text = contentString
-        }
-        
-        return cell
-    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -1,26 +1,29 @@
 extension DailyThoughtsViewController {
-    dynamic func changeNavButton(notification: NSNotification) {
-        self.navigationItem.rightBarButtonItem?.title = "Done"
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return thoughtEntries.count
     }
     
-    @IBAction func endEditing(sender: UIBarButtonItem) {
-        if (sender.title == "Add") {
-            self.tableView.beginUpdates()
-            print("........ add new entry")
-            var newThoughEntry = Thought()
-            newThoughEntry.dateCreated = NSDate()
-            newThoughEntry.content = ""
-            thoughtEntries.insert(newThoughEntry, atIndex: 0)
-            self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: .Automatic)
-            self.tableView.endUpdates()
-            (self.tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0)) as! MultiLineTextInputTableViewCell).textView?.becomeFirstResponder()
-        } else {
-            print("....... end editing")
-            self.tableView.endEditing(true)
-            self.navigationItem.rightBarButtonItem?.title = "Add"
-        }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("dailyThoughtCell", forIndexPath: indexPath) as! MultiLineTextInputTableViewCell
+        let indexThoughEntry = thoughtEntries[indexPath.row]
+        
+        let formatter = NSDateFormatter()
+        formatter.dateStyle = .FullStyle
+        formatter.timeStyle = .ShortStyle
+        cell.titleLabel!.text = formatter.stringFromDate(indexThoughEntry.dateCreated)
+        cell.textString = indexThoughEntry.content
+        
+        return cell
     }
-
+    
+    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 44.0
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
 }
 
 import UIKit
@@ -56,38 +59,34 @@ class DailyThoughtsViewController: UITableViewController {
         notificationCenter.addObserver(self, selector: "changeNavButton:", name: "editingText", object: nil)
     }
     
+    dynamic func changeNavButton(notification: NSNotification) {
+        self.navigationItem.rightBarButtonItem?.title = "Done"
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func endEditing(sender: UIBarButtonItem) {
+        if (sender.title == "Add") {
+            self.tableView.beginUpdates()
+            print("........ add new entry")
+            var newThoughEntry = Thought()
+            newThoughEntry.dateCreated = NSDate()
+            newThoughEntry.content = ""
+            thoughtEntries.insert(newThoughEntry, atIndex: 0)
+            self.tableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: .Automatic)
+            self.tableView.endUpdates()
+            (self.tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0)) as! MultiLineTextInputTableViewCell).textView?.becomeFirstResponder()
+        } else {
+            print("....... end editing")
+            self.tableView.endEditing(true)
+            self.navigationItem.rightBarButtonItem?.title = "Add"
+        }
     }
     
     override func viewDidDisappear(animated: Bool) {
         super.viewDidDisappear(animated)
         self.notificationCenter.removeObserver(self, name: "editingText", object: nil)
-    }
-    
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return thoughtEntries.count
-    }
-
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("dailyThoughtCell", forIndexPath: indexPath) as! MultiLineTextInputTableViewCell
-        let indexThoughEntry = thoughtEntries[indexPath.row]
-
-        let formatter = NSDateFormatter()
-        formatter.dateStyle = .FullStyle
-        formatter.timeStyle = .ShortStyle
-        cell.titleLabel!.text = formatter.stringFromDate(indexThoughEntry.dateCreated)
-        cell.textString = indexThoughEntry.content
-
-        return cell
-    }
-    
-    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 44.0
-    }
-    
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
     }
 }

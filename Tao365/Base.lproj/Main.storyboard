@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="38U-nd-5fr">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -75,27 +76,28 @@
                                                 <segue destination="05i-Wb-nG1" kind="show" identifier="startDayNav" id="Qj8-6H-oIw"/>
                                             </connections>
                                         </button>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-QZ-tE0">
-                                            <rect key="frame" x="17" y="56" width="563" height="128"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcj-Ze-icx">
+                                            <rect key="frame" x="17" y="51" width="563" height="133"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="128" id="4GJ-i5-p0a"/>
+                                                <constraint firstAttribute="height" constant="135" id="3pt-Xy-OIA"/>
                                             </constraints>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        </textView>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="mI7-QZ-tE0" firstAttribute="top" secondItem="vEQ-Cb-hsU" secondAttribute="bottom" constant="13" id="9DA-aR-PRY"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="OdV-ib-I29" secondAttribute="trailing" constant="10" id="CBe-fU-F4m"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="mI7-QZ-tE0" secondAttribute="trailing" constant="12" id="MBQ-N4-Lks"/>
                                         <constraint firstItem="vEQ-Cb-hsU" firstAttribute="leading" secondItem="UZ0-6R-tBf" secondAttribute="leadingMargin" constant="10" id="OHf-UQ-FH3"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="OdV-ib-I29" secondAttribute="bottom" constant="5" id="OXs-0h-ZOU"/>
-                                        <constraint firstItem="mI7-QZ-tE0" firstAttribute="leading" secondItem="UZ0-6R-tBf" secondAttribute="leadingMargin" constant="9" id="XFM-If-IkY"/>
+                                        <constraint firstItem="Qcj-Ze-icx" firstAttribute="top" secondItem="vEQ-Cb-hsU" secondAttribute="bottom" constant="8" id="PTN-Rh-cXR"/>
+                                        <constraint firstItem="OdV-ib-I29" firstAttribute="top" secondItem="Qcj-Ze-icx" secondAttribute="bottom" constant="8" id="Tav-OK-GsX"/>
                                         <constraint firstItem="OdV-ib-I29" firstAttribute="leading" secondItem="UZ0-6R-tBf" secondAttribute="leadingMargin" constant="10" id="YBo-nk-Ydg"/>
                                         <constraint firstItem="vEQ-Cb-hsU" firstAttribute="trailing" secondItem="UZ0-6R-tBf" secondAttribute="trailingMargin" constant="10" id="k1S-hB-060"/>
                                         <constraint firstItem="vEQ-Cb-hsU" firstAttribute="top" secondItem="UZ0-6R-tBf" secondAttribute="topMargin" constant="10" id="kYR-XV-COZ"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="OdV-ib-I29" secondAttribute="trailing" constant="10" id="mCd-ab-KQP"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Qcj-Ze-icx" secondAttribute="trailing" constant="10" id="rwu-um-kfA"/>
+                                        <constraint firstItem="Qcj-Ze-icx" firstAttribute="leading" secondItem="UZ0-6R-tBf" secondAttribute="leadingMargin" constant="9" id="xO7-so-uvG"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
@@ -151,7 +153,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xmg-4v-XWN">
                                             <rect key="frame" x="18" y="8" width="563" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
